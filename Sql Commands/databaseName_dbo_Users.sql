@@ -1,0 +1,14 @@
+create table Users
+(
+    Id           int identity
+        primary key,
+    FirstName    varchar(50)    not null,
+    LastName     varchar(50)    not null,
+    Email        varchar(50)    not null,
+    PasswordHash varbinary(500) not null,
+    PasswordSalt varbinary(500) not null,
+    Status       bit            not null
+)
+go
+
+INSERT INTO databaseName.dbo.Users (Id, FirstName, LastName, Email, PasswordHash, PasswordSalt, Status) VALUES (1, N'Furkan', N'Karatas', N'email@email.com', 0x59AC86CD7A0F1E30BDAC7A2B81F95805F37983144EF498F1D33484F0F9485D5E332FF8E082BFDD17C341F46B2F4BD5725273232DF9B50686660AA69B4F2D6F83, 0xEFAD39144283E83D2D544DD105CD0D1D37BA06D2D61E167C04D57D8B0A22FA2D2BE144ED2A342627A9F9C9869F0FCB0B37501D94F1D2DD927C63CA852B9CE88692FB76670D373DB21DA3D87D3F17F1CE573917707B2AEEE7F8A2A0659619D29CC3076EBAFCAA02981ED5B18785F104EBEA383B32B7F812C7D83126DD931FC4F2, 1);
