@@ -5,6 +5,7 @@ using System.IO;
 using System.Text.Json;
 using Newtonsoft.Json;
 using Business.Abstract;
+using Business.Constants;
 using Microsoft.Extensions.Localization;
 
 namespace WebAPI.Controllers
@@ -106,6 +107,7 @@ namespace WebAPI.Controllers
         public IActionResult Test([FromQuery] int id)
         {
             var trdata = _localizer["data",id];
+            var a = Messages.AccessTokenCreated;
 
 
             return Ok();

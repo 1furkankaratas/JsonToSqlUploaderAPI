@@ -10,8 +10,11 @@ namespace Business.ValidationRules.FluentValidation
     {
         public ItDataModelUpdateValidator()
         {
+            RuleFor(p => p.Id).NotEmpty();
+            RuleFor(p => p.dc_Categoria).NotEmpty();
+            RuleFor(p => p.dc_Orario).NotEmpty();
+            RuleFor(p => p.dc_Evento).NotEmpty();
 
-           
         }
     }
 }

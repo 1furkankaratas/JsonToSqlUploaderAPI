@@ -10,8 +10,8 @@ namespace Business.ValidationRules.FluentValidation
     {
         public TrDataModelDeleteValidator()
         {
+            RuleFor(p => p.Id).NotEmpty();
 
-           
         }
     }
 }

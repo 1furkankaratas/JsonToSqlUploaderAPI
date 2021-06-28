@@ -11,7 +11,7 @@ using Business.BusinessAspects.Autofac;
 
 namespace Business.Concrete
 {
-    //[SecuredOperation("user")]
+    [SecuredOperation("user")]
     public class TrDataManger : ITrDataService
     {
         private ITrDataDal _trDataDal;

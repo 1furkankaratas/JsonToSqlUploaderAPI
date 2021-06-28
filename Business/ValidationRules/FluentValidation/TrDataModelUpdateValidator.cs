@@ -10,7 +10,10 @@ namespace Business.ValidationRules.FluentValidation
     {
         public TrDataModelUpdateValidator()
         {
-
+            RuleFor(p => p.Id).NotEmpty();
+            RuleFor(p => p.dc_Kategori).NotEmpty();
+            RuleFor(p => p.dc_Olay).NotEmpty();
+            RuleFor(p => p.dc_Zaman).NotEmpty();
         }
     }
 }
